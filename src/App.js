@@ -31,7 +31,7 @@ function App() {
   return (
     <Router className={classes.app}>
       <Switch>
-        <CustomRoute path="{prefix}" component={<Landing />} />
+        <CustomRoute path={prefix} component={<Landing />} />
       </Switch>
     </Router>
   );
