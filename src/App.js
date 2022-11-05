@@ -27,7 +27,7 @@ function CustomRoute({ path, component, exact = true }) {
 function App() {
   const classes = useStyles();
   const prefix = process.env.PUBLIC_PREFIX || '/';
-  document.title = 'Web - TOTP ' + prefix;
+  document.title = `Web - TOTP ${prefix}`;
   return (
     <Router basename={prefix} className={classes.app}>
       <Switch>
