@@ -29,9 +29,9 @@ function App() {
   document.title = 'Web - TOTP';
   const prefix = process.env.PUBLIC_PREFIX || '/';
   return (
-    <Router className={classes.app}>
+    <Router basename={prefix} className={classes.app}>
       <Switch>
-        <CustomRoute path={prefix} component={<Landing />} />
+        <CustomRoute path="/" component={<Landing />} />
       </Switch>
     </Router>
   );
