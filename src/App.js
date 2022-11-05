@@ -27,10 +27,11 @@ function CustomRoute({ path, component, exact = true }) {
 function App() {
   const classes = useStyles();
   document.title = 'Web - TOTP';
+  const prefix = process.env.PUBLIC_PREFIX || '/';
   return (
     <Router className={classes.app}>
       <Switch>
-        <CustomRoute path="/" component={<Landing />} />
+        <CustomRoute path="{prefix}" component={<Landing />} />
       </Switch>
     </Router>
   );
