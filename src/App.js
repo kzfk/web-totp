@@ -28,7 +28,6 @@ function App() {
   const classes = useStyles();
   document.title = 'Web - TOTP';
   const prefix = process.env.PUBLIC_PREFIX || '/';
-  console.log('prefix', prefix);
   return (
     <Router className={classes.app}>
       <Switch>
